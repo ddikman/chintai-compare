@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PropertyCardComponent } from './property-card/property-card.component';
+import { YenPipe } from './yen.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PropertyCardComponent,
+    YenPipe
   ],
   imports: [
     BrowserModule,

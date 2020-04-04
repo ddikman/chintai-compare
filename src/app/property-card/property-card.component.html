@@ -1,0 +1,14 @@
+<div class="wrapper">
+  <div class="floorplan">
+    <img src="{{ property.floorplanUrl }}" />
+  </div>
+  <div class="featured">
+    <img src="{{ property.featuredImageUrl }}" />
+  </div>
+  <div class="information">
+    <div class="metric"><span class="label">家賃</span><span class="value">{{ property.pricing.rent | yen }}</span></div>
+    <div class="metric"><span class="label">礼金</span><span class="value">{{ property.pricing.reikin | yen }}</span></div>
+    <div class="metric"><span class="label">資金</span><span class="value">{{ property.pricing.shikin | yen }}</span></div>
+    <div class="metric"><span class="label">平均24月</span><span class="value">{{ property.pricing.getAverageCost(24) | yen }}</span></div>
+  </div>
+</div>
