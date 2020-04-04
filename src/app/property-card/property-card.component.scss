@@ -39,16 +39,18 @@
   flex-direction: column;
 }
 
+$border-radius: .28571429rem;
+
 .metric {
   background-color: #e8e8e8;
-  border-radius: .28571429rem;
+  border-radius: $border-radius;
   margin: 4px;
   font-size: 14px;
   display: flex;
 
   .label {
     background: #00b5ad;
-    border-radius: .28571429rem 0 0 .28571429rem;
+    border-radius: $border-radius 0 0 $border-radius;
     padding: 4px 8px;
     color: white;
   }

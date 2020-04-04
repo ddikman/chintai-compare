@@ -1,3 +1,4 @@
+import { PropertyParserComponent } from './property-parser/property-parser.component';
 import { PropertyCardComponent } from './property-card/property-card.component';
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
@@ -13,7 +14,8 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent,
         PropertyCardComponent,
-        YenPipe
+        YenPipe,
+        PropertyParserComponent
       ],
     }).compileComponents();
   }));
