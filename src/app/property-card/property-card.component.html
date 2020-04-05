@@ -6,9 +6,14 @@
     <img src="{{ property.featuredImageUrl }}" />
   </div>
   <div class="information">
+    <h1><a href="{{ property.link }}">{{ property.name }}</a></h1>
+    <div class="metric"><span class="label">平米</span><span class="value">{{ property.size }}m²</span></div>
+    <div class="metric"><span class="label">平米価格</span><span class="value">{{ property.pricing.getPerSqm(property.size) | yen }}/m²</span></div>
     <div class="metric"><span class="label">家賃</span><span class="value">{{ property.pricing.rent | yen }}</span></div>
     <div class="metric"><span class="label">礼金</span><span class="value">{{ property.pricing.reikin | yen }}</span></div>
+    <div class="metric"><span class="label">鍵交換費用</span><span class="value">{{ property.pricing.keyMoney | yen }}</span></div>
     <div class="metric"><span class="label">資金</span><span class="value">{{ property.pricing.shikin | yen }}</span></div>
     <div class="metric"><span class="label">平均24月</span><span class="value">{{ property.pricing.getAverageCost(24) | yen }}</span></div>
+    <div class="metric"><span class="label">引越費用</span><span class="value">{{ property.pricing.movingCost | yen }}</span></div>
   </div>
 </div>
